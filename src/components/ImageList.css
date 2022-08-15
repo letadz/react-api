@@ -1,0 +1,17 @@
+:root {
+    --column-gutter: 24px;
+    --columns: 3;
+}
+
+.image-list {
+    display: grid;
+    grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
+    grid-column-gap: var(--column-gutter);
+    /* grid-auto-rows: 10px; */
+    row-gap: 24px;
+}
+
+.image-list img {
+    width: 100%;
+    height: auto;
+}
